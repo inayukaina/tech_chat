@@ -3,25 +3,25 @@
     <% @questions.each do |question| %>
       <div class="post-content">
         <div class="comment">
-          <div class="commment-num">
+          <div class="comment-num">
             0
           </div>
-          <div class="somment-unit">
+          <div class="comment-unit">
             comments
           </div>
         </div>
         <div class="question">
           <div class="question-top">
-            <div>
-              タイトル：<%= question.title %>
+            <div class="question-top__title">
+              <%= question.title %>
             </div>
-            <div>
-              投稿者名：<%= question.name %>
+            <div class="question-top__name">
+              <%= question.name %>
             </div>
           </div>
           <div class="question-bottom">
-            <div>
-              内容：<%= question.content %>
+            <div class="question-bottom__comment">
+              <%= question.content %>
             </div>
           </div>
         </div>
